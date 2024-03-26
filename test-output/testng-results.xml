@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-26T11:55:59 IST" name="Default suite" finished-at="2024-03-26T11:56:14 IST" duration-ms="14946">
+    <groups>
+    </groups>
+    <test started-at="2024-03-26T11:55:59 IST" name="Default test" finished-at="2024-03-26T11:56:14 IST" duration-ms="14946">
+      <class name="JaigerMeisterSuperAdminLogin.TC_001Superadmin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:JaigerMeisterSuperAdminLogin.TC_001Superadmin@76a4ebf2]" started-at="2024-03-26T11:55:59 IST" name="setup" finished-at="2024-03-26T11:56:05 IST" duration-ms="5282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_superadminlogin()[pri:0, instance:JaigerMeisterSuperAdminLogin.TC_001Superadmin@76a4ebf2]" started-at="2024-03-26T11:56:05 IST" name="verify_superadminlogin" finished-at="2024-03-26T11:56:14 IST" duration-ms="9630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_superadminlogin -->
+      </class> <!-- JaigerMeisterSuperAdminLogin.TC_001Superadmin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

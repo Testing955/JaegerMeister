@@ -1,5 +1,7 @@
 package JaigerMeisterSuperAdminLogin;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,7 +31,7 @@ ss.signout();
 }
 catch(Exception e)
 {
-Assert.fail();
+AssertJUnit.fail();
 }
 }
 }

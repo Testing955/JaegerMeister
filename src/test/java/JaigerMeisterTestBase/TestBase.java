@@ -28,7 +28,6 @@ case "safari":driver = new SafariDriver();break;
 default: System.out.println("No matching browser.....");
 return;
 }
-
 driver.get("https://jagermaester-stag.hestawork.com/");
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 driver.manage().window().maximize();

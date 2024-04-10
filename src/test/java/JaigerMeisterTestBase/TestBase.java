@@ -1,6 +1,7 @@
 package JaigerMeisterTestBase;
 
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -15,6 +16,7 @@ public class TestBase
 {
 public WebDriver driver;
 public Logger logger;
+public Properties p;
 @BeforeClass
 @Parameters({"os","browser"})
 public void setup(String os, String br)
@@ -28,7 +30,7 @@ case "safari":driver = new SafariDriver();break;
 default: System.out.println("No matching browser.....");
 return;
 }
-driver.get("https://jagermaester-stag.hestawork.com/");
+driver.get(p.getProperty("appURL"));
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 driver.manage().window().maximize();
 }

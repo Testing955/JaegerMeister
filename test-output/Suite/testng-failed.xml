@@ -3,18 +3,16 @@
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="os" value="mac"/>
   <parameter name="browser" value="chrome"/>
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+  <test thread-count="5" parallel="tests" name="SafariTest(failed)">
+    <parameter name="os" value="mac"/>
+    <parameter name="browser" value="safari"/>
     <classes>
-      <class name="JaigerMeisterSuperAdminLogin.Tc_002JaigerMeisterSuperadminStats">
+      <class name="JaigerMeisterSuperAdminLogin.TC_001Superadmin">
         <methods>
-          <include name="Statsoption"/>
+          <include name="verify_superadminlogin"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- JaigerMeisterSuperAdminLogin.Tc_002JaigerMeisterSuperadminStats -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="5" parallel="tests" name="SafariTest(failed)">
-    <classes>
+      </class> <!-- JaigerMeisterSuperAdminLogin.TC_001Superadmin -->
       <class name="JaigerMeisterSuperAdminLogin.Tc_002JaigerMeisterSuperadminStats">
         <methods>
           <include name="Statsoption"/>
@@ -23,4 +21,20 @@
       </class> <!-- JaigerMeisterSuperAdminLogin.Tc_002JaigerMeisterSuperadminStats -->
     </classes>
   </test> <!-- SafariTest(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <classes>
+      <class name="JaigerMeisterSuperAdminLogin.TC_001Superadmin">
+        <methods>
+          <include name="verify_superadminlogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- JaigerMeisterSuperAdminLogin.TC_001Superadmin -->
+      <class name="JaigerMeisterSuperAdminLogin.Tc_002JaigerMeisterSuperadminStats">
+        <methods>
+          <include name="Statsoption"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- JaigerMeisterSuperAdminLogin.Tc_002JaigerMeisterSuperadminStats -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
